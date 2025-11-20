@@ -1,8 +1,10 @@
 // Configuration and state
+let api_key = os.getenv("GEMINI_API_KEY2")  
+let client_id = os.getenv("CLIENT_ID")  
 let tokenClient;
 const SCOPES = 'https://www.googleapis.com/auth/fitness.activity.read https://www.googleapis.com/auth/fitness.body.read';
-const CLIENT_ID = '888980115098-0tbia4b90bpej5s89i3s3jiabl8h4d4e.apps.googleusercontent.com';
-const API_KEY = 'AIzaSyCId_59vuR-dPoL_TVQqWdxrZ-zpbN6pFs';
+const CLIENT_ID = client_id;
+const API_KEY = api_key;
 
 // Initialize the Google API client
 function initializeGoogleApi() {
